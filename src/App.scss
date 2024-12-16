@@ -1,0 +1,20 @@
+@use './assets/styles/index' as *;
+
+.main {
+  display: flex;
+  justify-content: center;
+
+  .hero-bg {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+
+  .content {
+    flex: 1;
+    max-width: 1314px;
+  }
+}
