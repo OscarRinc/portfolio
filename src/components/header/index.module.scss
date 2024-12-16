@@ -1,0 +1,95 @@
+@use '../../assets/styles/index' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid $border_1;
+  border-radius: 8px;
+  height: 82px;
+  background-color: $neutral_900;
+  margin-top: 21px;
+
+  .menuContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 100%;
+    cursor: pointer;
+
+    .menuIcon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .body {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 32px;
+
+    .titleContainer {
+      display: flex;
+      column-gap: 9px;
+      align-items: center;
+
+      .titleIcon {
+        width: 36px;
+        height: 36px;
+      }
+
+      .title {
+        font-size: 24px;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+
+    .menuItemsContainer {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 37px;
+
+      .menuItem {
+        font-size: 16px;
+        color: $neutral_0;
+        cursor: pointer;
+      }
+    }
+
+    .soccialContainer {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+
+      .soccialIcon {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .modeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+
+    .modeIcon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
