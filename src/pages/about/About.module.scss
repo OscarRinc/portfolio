@@ -1,0 +1,143 @@
+@use '../../assets/styles/index' as *;
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 86px;
+  background-color: $neutral_900;
+  border-radius: 8px;
+  border: 1px solid $border_1;
+  margin-top: 32px;
+  padding: 50px 58px 63px 36px;
+  position: relative;
+
+  .border {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 164px;
+    height: 164px;
+  }
+
+  .pictureBackground {
+    width: 512px;
+    height: 461px;
+    position: relative;
+    overflow: hidden;
+    mask-image: url(/images/black/profile-background.svg);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  
+    .picture {
+      width: 100%;
+      height: auto;
+    }
+
+    .pictureIcon {
+      position: absolute;
+      width: 81px;
+      height: 73px;
+    }
+  }
+
+  .info {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .leyendText {
+      color: $neutral_0;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 150%;
+
+      .leyend {
+        color: $secondary_2;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+      }
+    }
+
+    .title {
+      color: $neutral_0;
+      font-size: 50px;
+      font-weight: 500;
+      line-height: 120%;
+      margin-top: 9px;
+
+      .jobTitle {
+        background: var(--Linear-4-dark, linear-gradient(270deg, #659932 0%, #A8FF53 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 120%;
+      }
+    }
+
+    .description {
+      color: $neutral_300;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      margin-top: 27px;
+
+      .descriptionResalted {
+        color: $secondary_2;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+      }
+    }
+
+    .techContainer {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      margin-top: 36px;
+
+      .techBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border: 1px solid $border_1;
+        border-radius: 10px;
+
+        .techIcon {
+          height: 40px;
+        }
+      }
+
+      .techMore {
+        align-self: flex-end;
+        color: $neutral_300;;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+      }
+    }
+
+    .cv {
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
+      color: $neutral_300;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      margin-top: 30px;
+      cursor: pointer;
+
+      .cvIcon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

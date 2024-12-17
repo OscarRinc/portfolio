@@ -1,6 +1,7 @@
 import About from './pages/about';
 import './App.scss';
 import Header from './components/header';
+import Count from './pages/count';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <div className='content'>
         <Header />
         <About />
+        <Count />
       </div>
     </div>
   )
