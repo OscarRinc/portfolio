@@ -11,6 +11,11 @@
   padding: 50px 58px 63px 36px;
   position: relative;
 
+  &.light {
+    border: 1px solid $border_1_light;
+    background-color: $neutral_0;
+  }
+
   .border {
     position: absolute;
     top: 0;
@@ -19,27 +24,37 @@
     height: 164px;
   }
 
-  .pictureBackground {
-    width: 512px;
-    height: 461px;
+  .mainPicture {
     position: relative;
-    overflow: hidden;
-    mask-image: url(/images/black/profile-background.svg);
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    mask-position: center;
-  
-    .picture {
-      width: 100%;
-      height: auto;
-    }
 
     .pictureIcon {
       position: absolute;
       width: 81px;
       height: 73px;
+      z-index: 3;
+      bottom: 0;
+      right: 0;
+      margin-right: 90px;
+      margin-bottom: -10px;
+    }
+  
+    .pictureBackground {
+      width: 512px;
+      height: 461px;
+      position: relative;
+      overflow: hidden;
+      mask-image: url(/images/black/profile-background.svg);
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: center;
+    
+      .picture {
+        width: 100%;
+        height: auto;
+      }
     }
   }
+
 
   .info {
     flex: 1;
@@ -52,6 +67,10 @@
       font-size: 20px;
       font-weight: 400;
       line-height: 150%;
+
+      &.light {
+        color: $neutral_0_light;
+      }
 
       .leyend {
         color: $secondary_2;
@@ -68,6 +87,10 @@
       line-height: 120%;
       margin-top: 9px;
 
+      &.light {
+        color: $neutral_0_light;
+      }
+
       .jobTitle {
         background: var(--Linear-4-dark, linear-gradient(270deg, #659932 0%, #A8FF53 100%));
         background-clip: text;
@@ -76,6 +99,13 @@
         font-size: 50px;
         font-weight: 500;
         line-height: 120%;
+
+        &.light {
+          background: var(--Linear-4-light, linear-gradient(270deg, #33A381 0%, #129840 100%));
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
       }
     }
 
@@ -85,6 +115,10 @@
       font-weight: 400;
       line-height: 150%;
       margin-top: 27px;
+
+      &.light {
+        color: $neutral_300_light;
+      }
 
       .descriptionResalted {
         color: $secondary_2;
@@ -109,6 +143,11 @@
         border: 1px solid $border_1;
         border-radius: 10px;
 
+        &.light {
+          border: 1px solid $border_1_light;
+          background-color: $technology_icon;
+        }
+
         .techIcon {
           height: 40px;
         }
@@ -116,10 +155,14 @@
 
       .techMore {
         align-self: flex-end;
-        color: $neutral_300;;
+        color: $neutral_300;
         font-size: 16px;
         font-weight: 400;
         line-height: 150%;
+
+        &.light {
+          color: $neutral_300_light;
+        }
       }
     }
 
@@ -133,6 +176,10 @@
       line-height: 150%;
       margin-top: 30px;
       cursor: pointer;
+
+      &.light {
+        color: $neutral_300_light;
+      }
 
       .cvIcon {
         width: 24px;

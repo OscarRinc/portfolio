@@ -1,18 +1,11 @@
-import About from './pages/about';
-import './App.scss';
-import Header from './components/header';
-import Count from './pages/count';
+import { DarkModeContextProvider } from './context/darkMode';
+import Main from './pages/main';
 
 const App = () => {
   return (
-    <div className='main'>
-      <img className='hero-bg' src='/images/black/hero-background.png' alt='' />
-      <div className='content'>
-        <Header />
-        <About />
-        <Count />
-      </div>
-    </div>
+    <DarkModeContextProvider>
+      <Main />
+    </DarkModeContextProvider>
   )
 }
 

@@ -1,0 +1,26 @@
+@use '../../assets/styles/index' as *;
+
+.heroBg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: $neutral_1000;
+
+  &.light {
+    background-color: $main_bg_light;
+  }
+
+  .content {
+    flex: 1;
+    max-width: 1314px;
+    z-index: 2;
+  }
+}

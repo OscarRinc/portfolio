@@ -9,6 +9,11 @@
   background-color: $neutral_900;
   margin-top: 21px;
 
+  &.light {
+    border: 1px solid $border_header_light;
+    background-color: $header_bg_light;
+  }
+
   .menuContainer {
     display: flex;
     justify-content: center;
