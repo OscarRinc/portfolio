@@ -4,7 +4,7 @@ import styles from './Count.module.scss';
 const Count = () => {
   const { themeStatus } = useDarkMode();
   return (
-    <div className={`${styles.count} ${themeStatus === 'light' && styles.light}`}>
+    <div id='my-work' className={`${styles.count} ${themeStatus === 'light' && styles.light}`}>
       <img className={`${styles.countBackground} ${themeStatus === 'light' && styles.light}`} src={`/images/${themeStatus === 'dark' ? 'black' : 'white'}/count-background.png`} alt='' />
       <div className={styles.countContainer}>
         <img className={styles.countIcon} src={`/images/${themeStatus === 'dark' ? 'black' : 'white'}/shape-line.png`} alt='' />

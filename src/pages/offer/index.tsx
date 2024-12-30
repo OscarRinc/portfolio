@@ -22,7 +22,7 @@ const Offer = () => {
   )
 
   return (
-    <div className={`${styles.offer} ${isLight && styles.light}`}>
+    <div id='my-offer' className={`${styles.offer} ${isLight && styles.light}`}>
       <img className={`${styles.countBackground} ${isLight && styles.light}`} src={`/images/${themeStatus === 'dark' ? 'black' : 'white'}/count-background.png`} alt='' />
       <div className={styles.titleContainer}>
         <div className={`${styles.dotTitle} ${isLight && styles.light}`}><Dot color={isLight ? '#62A92B' : undefined} />What do I offer</div>

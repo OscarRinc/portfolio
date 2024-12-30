@@ -12,7 +12,7 @@ const About = () => {
   }
 
   return (
-    <div className={`${styles.about} ${themeStatus === 'light' && styles.light}`}>
+    <div id='about-me' className={`${styles.about} ${themeStatus === 'light' && styles.light}`}>
       <img className={styles.border} src='/images/black/border-gradient.png' alt='' />
       <div className={styles.mainPicture}>
         <img className={styles.pictureIcon} src='/images/black/picture-icon.png' alt='' />
@@ -39,7 +39,7 @@ const About = () => {
           {technologyContainer('/images/black/react.png')}
           <div className={`${styles.techMore} ${themeStatus === 'light' && styles.light}`}>...and more</div>
         </div>
-        <div className={`${styles.cv} ${themeStatus === 'light' && styles.light}`}><img className={styles.cvIcon} src={`/images/${themeStatus === 'dark' ? 'black' : 'white'}/download-line.png`} alt='' />{'[ Download my CV ]'}</div>
+        <a href='/pdf/Oscar_Orlando_Rincon_Paez_-_Senior_Full_Stack_Developer.pdf' target='_blank'><div className={`${styles.cv} ${themeStatus === 'light' && styles.light}`}><img className={styles.cvIcon} src={`/images/${themeStatus === 'dark' ? 'black' : 'white'}/download-line.png`} alt='' />{'[ Download my CV ]'}</div></a>
       </div>
     </div>
   )
