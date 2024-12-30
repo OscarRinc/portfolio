@@ -12,9 +12,11 @@ $danger: #FCA5A7;
 $muted: #9CA3AF;
 
 $neutral_0: #FFFFFF;
+$neutral_0_light: #1F1F24;
 $neutral_100: #E9E9EA;
 $neutral_200: #BCBCBE;
 $neutral_300: #8F8F92;
+$neutral_300_light: #5E5E65;
 $neutral_400: #79797C;
 $neutral_500: #636366;
 $neutral_600: #3B3B41;
@@ -24,3 +26,16 @@ $neutral_900: #272730;
 $neutral_1000: #1F1F24;
 
 $border_1: #3B413D;
+$border_header_light: #4A5349; 
+$border_1_light: #C0DCBC;
+
+$picture_background: #645A6D;
+$header_bg_light: #333A32;
+$main_bg_light: #E8E8E8;
+$technology_icon: #F8F8F8;
+
+// linear gradients
+
+$linear_4_dark: linear-gradient(270deg, #659932 0%, $primary_2 100%);
+$linear_4_light: linear-gradient(270deg, #33A381 0%, #129840 100%);
+$linear_header: linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 1) 100%);

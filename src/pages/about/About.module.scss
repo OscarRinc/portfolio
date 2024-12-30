@@ -1,0 +1,190 @@
+@use '../../assets/styles/index' as *;
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 86px;
+  background-color: $neutral_900;
+  border-radius: 8px;
+  border: 1px solid $border_1;
+  margin-top: 32px;
+  padding: 50px 58px 63px 36px;
+  position: relative;
+
+  &.light {
+    border: 1px solid $border_1_light;
+    background-color: $neutral_0;
+  }
+
+  .border {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 164px;
+    height: 164px;
+  }
+
+  .mainPicture {
+    position: relative;
+
+    .pictureIcon {
+      position: absolute;
+      width: 81px;
+      height: 73px;
+      z-index: 3;
+      bottom: 0;
+      right: 0;
+      margin-right: 90px;
+      margin-bottom: -10px;
+    }
+  
+    .pictureBackground {
+      width: 512px;
+      height: 461px;
+      position: relative;
+      overflow: hidden;
+      mask-image: url(/images/black/profile-background.svg);
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      mask-position: center;
+    
+      .picture {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+
+  .info {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    .leyendText {
+      color: $neutral_0;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 150%;
+
+      &.light {
+        color: $neutral_0_light;
+      }
+
+      .leyend {
+        color: $secondary_2;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+      }
+    }
+
+    .title {
+      color: $neutral_0;
+      font-size: 50px;
+      font-weight: 500;
+      line-height: 120%;
+      margin-top: 9px;
+
+      &.light {
+        color: $neutral_0_light;
+      }
+
+      .jobTitle {
+        background: $linear_4_dark;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 120%;
+
+        &.light {
+          background: $linear_4_light;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+
+    .description {
+      color: $neutral_300;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      margin-top: 27px;
+
+      &.light {
+        color: $neutral_300_light;
+      }
+
+      .descriptionResalted {
+        color: $secondary_2;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+      }
+    }
+
+    .techContainer {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      margin-top: 36px;
+
+      .techBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border: 1px solid $border_1;
+        border-radius: 10px;
+
+        &.light {
+          border: 1px solid $border_1_light;
+          background-color: $technology_icon;
+        }
+
+        .techIcon {
+          height: 40px;
+        }
+      }
+
+      .techMore {
+        align-self: flex-end;
+        color: $neutral_300;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+
+        &.light {
+          color: $neutral_300_light;
+        }
+      }
+    }
+
+    .cv {
+      display: flex;
+      align-items: center;
+      column-gap: 6px;
+      color: $neutral_300;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      margin-top: 30px;
+      cursor: pointer;
+
+      &.light {
+        color: $neutral_300_light;
+      }
+
+      .cvIcon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

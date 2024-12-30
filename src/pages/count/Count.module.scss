@@ -1,0 +1,74 @@
+@use '../../assets/styles/index' as *;
+
+.count {
+  display: flex;
+  justify-content: space-between;
+  background-color: $neutral_900;
+  border-radius: 8px;
+  border: 1px solid $border_1;
+  margin-top: 15px;
+  padding: 61px 116px;
+  position: relative;
+
+  &.light {
+    border: 1px solid $border_1_light;
+    background-color: $neutral_0;
+  }
+
+  .countBackground { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    &.light {
+      opacity: 0.03;
+    }
+  }
+
+  .countContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
+
+    .countIcon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .title {
+      color: $neutral_0;
+      font-size: 50px;
+      font-weight: 500;
+      line-height: 120%;
+
+      &.light {
+        color: $neutral_0_light;
+      }
+
+      .plus {
+        color: $neutral_300;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 120%;
+
+        &.light {
+          color: $neutral_300_light;
+        }
+      }
+    }
+
+    .subtitle {
+      color: $neutral_0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+
+      &.light {
+        color: $neutral_0_light;
+      }
+    }
+  }
+}

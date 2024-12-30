@@ -1,8 +1,11 @@
-import styles from './index.module.scss';
+import useDarkMode from '../../hooks/useDarkmode';
+import styles from './Header.module.scss';
 
 const Header = () => {
+  const { themeStatus, setIsDarkMode } = useDarkMode();
+
   return (
-    <div className={styles.header}>
+    <div className={`${styles.header} ${themeStatus === 'light' && styles.light}`}>
       <div className={styles.menuContainer}>
         <img className={styles.menuIcon} src='/images/black/menu-line.png' alt='' />
       </div>
@@ -26,8 +29,8 @@ const Header = () => {
           <img className={styles.soccialIcon} src='/images/black/github-fill.png' alt='' />
         </div>
       </div>
-      <div className={styles.modeContainer}>
-        <img className={styles.modeIcon} src='/images/black/sun-fill.png' alt='' />
+      <div className={styles.modeContainer} onClick={setIsDarkMode}>
+        <img className={styles.modeIcon} src={themeStatus === 'dark' ? '/images/black/sun-fill.png' : '/images/white/black-icon-fill.png'} alt='' />
       </div>
     </div>
   )
