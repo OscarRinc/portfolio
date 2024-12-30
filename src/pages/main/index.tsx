@@ -1,6 +1,8 @@
+import Footer from "../../components/footer";
 import Header from "../../components/header";
 import useDarkMode from "../../hooks/useDarkmode";
 import About from "../about";
+import Contact from "../contact";
 import Count from "../count";
 import Offer from "../offer";
 import styles from './Main.module.scss';
@@ -20,6 +22,8 @@ const Main = () => {
           <About />
           <Count />
           <Offer />
+          <Contact />
+          <Footer />
           {/* <Cooperation /> to be defined */}
         </div>
       </div>

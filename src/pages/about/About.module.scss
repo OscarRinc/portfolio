@@ -166,25 +166,31 @@
       }
     }
 
-    .cv {
-      display: flex;
-      align-items: center;
-      column-gap: 6px;
-      color: $neutral_300;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 150%;
-      margin-top: 30px;
-      cursor: pointer;
-
-      &.light {
-        color: $neutral_300_light;
-      }
-
-      .cvIcon {
-        width: 24px;
-        height: 24px;
+    a {
+      text-decoration: none;
+      
+      .cv {
+        display: flex;
+        align-items: center;
+        column-gap: 6px;
+        color: $neutral_300;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        margin-top: 30px;
+        cursor: pointer;
+        text-decoration: none;
+  
+        &.light {
+          color: $neutral_300_light;
+        }
+  
+        .cvIcon {
+          width: 24px;
+          height: 24px;
+        }
       }
     }
+
   }
 }
