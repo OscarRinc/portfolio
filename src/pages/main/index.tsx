@@ -2,6 +2,7 @@ import Header from "../../components/header";
 import useDarkMode from "../../hooks/useDarkmode";
 import About from "../about";
 import Count from "../count";
+import Offer from "../offer";
 import styles from './Main.module.scss';
 
 const Main = () => {
@@ -18,6 +19,7 @@ const Main = () => {
           <Header />
           <About />
           <Count />
+          <Offer />
           {/* <Cooperation /> to be defined */}
         </div>
       </div>
