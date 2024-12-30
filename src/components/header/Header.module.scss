@@ -47,7 +47,7 @@
 
       .title {
         font-size: 24px;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 1) 100%);
+        background: $linear_header;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;

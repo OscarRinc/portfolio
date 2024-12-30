@@ -92,7 +92,7 @@
       }
 
       .jobTitle {
-        background: var(--Linear-4-dark, linear-gradient(270deg, #659932 0%, #A8FF53 100%));
+        background: $linear_4_dark;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -101,7 +101,7 @@
         line-height: 120%;
 
         &.light {
-          background: var(--Linear-4-light, linear-gradient(270deg, #33A381 0%, #129840 100%));
+          background: $linear_4_light;
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;

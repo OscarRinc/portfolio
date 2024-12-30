@@ -1,0 +1,86 @@
+@use '../../assets/styles/index' as *;
+
+.cooperation {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  margin-top: 30px;
+  height: 500px;
+
+  .leftSection {
+    flex: 1;
+    display: flex;
+    border: 1px solid $border_1;
+    background-color: $neutral_900;
+    border-radius: 8px;
+
+    &.light {
+      border: 1px solid $border_1_light;
+      background-color: $neutral_0;
+    }
+
+    .contentLeft {
+      display: flex;
+      flex-direction: column;
+      margin: 56px 64px 64px 64px;
+      flex-direction: column;
+  
+      .leyend {
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+
+        .leyendText {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 150%;
+          background: $linear_4_dark;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+      }
+
+      .title {
+        color: $neutral_0;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 120%;
+        width: 70%;
+        margin-top: 6px;
+
+        .titleGray {
+          color: $neutral_300;
+        }
+      }
+      
+      .logoContainer {
+        display: flex;
+        column-gap: 50px;
+        row-gap: 24px;
+        flex-flow: wrap;
+        margin-top: 41px;
+        padding: 19px 24px;
+
+        .logo {
+          height: 29px;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  .rightSection {
+    display: flex;
+    width: 32%;
+    border: 1px solid $border_1;
+    background-color: $neutral_900;
+    border-radius: 8px;
+
+    &.light {
+      border: 1px solid $border_1_light;
+      background-color: $neutral_0;
+    }
+  }
+}

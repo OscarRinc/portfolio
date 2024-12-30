@@ -33,3 +33,9 @@ $picture_background: #645A6D;
 $header_bg_light: #333A32;
 $main_bg_light: #E8E8E8;
 $technology_icon: #F8F8F8;
+
+// linear gradients
+
+$linear_4_dark: linear-gradient(270deg, #659932 0%, $primary_2 100%);
+$linear_4_light: linear-gradient(270deg, #33A381 0%, #129840 100%);
+$linear_header: linear-gradient(90deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 1) 100%);

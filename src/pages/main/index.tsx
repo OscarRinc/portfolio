@@ -18,6 +18,7 @@ const Main = () => {
           <Header />
           <About />
           <Count />
+          {/* <Cooperation /> to be defined */}
         </div>
       </div>
     </>

@@ -6,14 +6,14 @@ interface IDarkMode {
 }
 
 const defaultContext: IDarkMode = {
-  isDarkMode: false,
+  isDarkMode: true,
   setIsDarkMode: () => {},
 }
 
 export const DarkModeContext = React.createContext<IDarkMode>(defaultContext);
 
 export const DarkModeContextProvider = ({ children }: { children: ReactNode }) => {
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(true);
 
   const setDarkMode = () => {
     setIsDarkMode((prev) => !prev);
