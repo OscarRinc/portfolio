@@ -25,6 +25,7 @@ const Header = () => {
         <div className={styles.soccialContainer}>
           {/* <img className={styles.soccialIcon} src='/images/black/facebook-circle-fill.png' alt='' />
           <img className={styles.soccialIcon} src='/images/black/twitter-x-fill.png' alt='' /> */}
+          <a href='#contact'><img className={`${styles.soccialIcon} ${styles.mobile}`} src={`/images/${themeStatus === 'light' ? 'white' : 'black'}/mail-fill.png`} alt='' /></a>
           <a href='https://www.linkedin.com/in/oscar-rincon-0647b515b/' target='_blank'><img className={styles.soccialIcon} src='/images/black/linkedin-fill.png' alt='' /></a>
           <a href='https://github.com/OscarRinc' target='_blank'><img className={styles.soccialIcon} src='/images/black/github-fill.png' alt='' /></a>
         </div>

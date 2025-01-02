@@ -27,8 +27,8 @@ const Contact = () => {
     <div id='contact' className={styles.contact}>
       <div className={`${styles.title} ${isLight && styles.light}`}>Let’s connect</div>
       <div className={styles.infoContainer}>
-        <Card icon='phone-fill.png' title='Phone Number' value='+57-322-467-5745 | +1-813-458-7325' />
-        <Card icon='mail-fill.png' title='Email' value='oscar.rincon.paez@gamil.com' />
+        <Card icon='phone-fill.png' title='Phone Number' value='+57-322-467-5745 Wp | +1-813-458-7325' />
+        <Card icon='mail-fill.png' title='Email' value='oscar.rincon.paez@gmail.com' />
       </div>
     </div>
   )

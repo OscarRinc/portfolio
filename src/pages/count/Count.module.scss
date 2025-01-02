@@ -10,17 +10,29 @@
   padding: 61px 116px;
   position: relative;
 
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    row-gap: 20px;
+  }
+
   &.light {
     border: 1px solid $border_1_light;
     background-color: $neutral_0;
   }
 
-  .countBackground { 
+  .countBackground {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+
+    @media (max-width: 600px) {
+      display: none;
+      /* Oculta el fondo decorativo en pantallas pequeñas */
+    }
 
     &.light {
       opacity: 0.03;
@@ -32,43 +44,81 @@
     flex-direction: column;
     row-gap: 13px;
 
+    @media (max-width: 600px) {
+      align-items: center;
+      row-gap: 10px;
+      /* Ajusta el espacio entre elementos */
+    }
+
     .countIcon {
       width: 24px;
       height: 24px;
+
+      @media (max-width: 600px) {
+        width: 20px;
+        height: 20px;
+        /* Ajusta el tamaño del ícono */
+      }
     }
 
-    .title {
-      color: $neutral_0;
-      font-size: 50px;
-      font-weight: 500;
-      line-height: 120%;
-
-      &.light {
-        color: $neutral_0_light;
+    .countText {
+      @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
-      .plus {
-        color: $neutral_300;
-        text-align: center;
+      .title {
+        color: $neutral_0;
         font-size: 50px;
         font-weight: 500;
         line-height: 120%;
 
+        @media (max-width: 600px) {
+          font-size: 32px;
+          /* Reduce el tamaño de la fuente */
+        }
+
         &.light {
-          color: $neutral_300_light;
+          color: $neutral_0_light;
+        }
+
+        .plus {
+          color: $neutral_300;
+          text-align: center;
+          font-size: 50px;
+          font-weight: 500;
+          line-height: 120%;
+
+          @media (max-width: 600px) {
+            font-size: 32px;
+            /* Reduce el tamaño de la fuente */
+          }
+
+          &.light {
+            color: $neutral_300_light;
+          }
+        }
+      }
+
+      .subtitle {
+        color: $neutral_0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+
+        @media (max-width: 600px) {
+          font-size: 14px;
+          /* Ajusta el tamaño de la fuente */
+          text-align: center;
+          /* Centra el texto para pantallas pequeñas */
+        }
+
+        &.light {
+          color: $neutral_0_light;
         }
       }
     }
 
-    .subtitle {
-      color: $neutral_0;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 150%;
-
-      &.light {
-        color: $neutral_0_light;
-      }
-    }
   }
 }

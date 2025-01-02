@@ -9,6 +9,11 @@
   margin-top: 30px;
   position: relative;
 
+  @media (max-width: 600px) {
+    margin-top: 20px;
+    padding: 20px; /* Agrega padding para ajustarse en pantallas pequeñas */
+  }
+
   &.light {
     border: 1px solid $border_1_light;
     background-color: $neutral_0;
@@ -24,6 +29,10 @@
     &.light {
       opacity: 0.03;
     }
+
+    @media (max-width: 600px) {
+      display: none; /* Oculta el fondo decorativo en pantallas pequeñas */
+    }
   }
 
   .titleContainer {
@@ -35,6 +44,12 @@
     row-gap: 6px;
     margin-top: 60px;
     margin-bottom: 18px;
+
+    @media (max-width: 600px) {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      row-gap: 4px; /* Reduce el espacio entre elementos */
+    }
 
     .dotTitle {
       display: flex;
@@ -48,6 +63,10 @@
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      @media (max-width: 600px) {
+        font-size: 14px; /* Ajusta el tamaño de la fuente */
+      }
 
       &.light {
         background: $linear_4_light;
@@ -65,12 +84,21 @@
       line-height: 120%;
       width: 40%;
 
+      @media (max-width: 600px) {
+        font-size: 18px; /* Reduce el tamaño de la fuente */
+        width: 100%; /* Ocupa todo el ancho */
+      }
+
       &.light {
         color: $neutral_0_light;
       }
 
       .gray {
         color: $neutral_300;
+
+        @media (max-width: 600px) {
+          font-size: 14px; /* Ajusta el tamaño del texto en gris */
+        }
 
         &.light {
           color: $neutral_300_light;
@@ -88,6 +116,13 @@
     margin-left: 64px;
     margin-right: 64px;
 
+    @media (max-width: 600px) {
+      flex-direction: column; /* Apila las tarjetas verticalmente */
+      margin-left: 10px;
+      margin-right: 10px;
+      row-gap: 20px; /* Agrega espacio entre las tarjetas */
+    }
+
     .card {
       width: 33%;
       height: 298px;
@@ -98,6 +133,16 @@
       padding-right: 42px;
       z-index: 5;
 
+      @media (max-width: 600px) {
+        width: 100%;
+        height: auto;
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+      }
+
       &.light {
         border: 1px solid $border_1_light;
         background-color: $neutral_0;
@@ -107,6 +152,10 @@
         width: 24px;
         height: 24px;
         margin-top: 93px;
+
+        @media (max-width: 600px) {
+          margin-top: 20px; /* Reduce el margen superior */
+        }
       }
 
       .title {
@@ -115,6 +164,13 @@
         font-weight: 500;
         line-height: 120%;
         margin-top: 16px;
+
+        @media (max-width: 600px) {
+          font-size: 18px;
+          margin-top: 10px;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
 
         &.light {
           color: $neutral_0_light;
@@ -127,6 +183,14 @@
         font-weight: 400;
         line-height: 150%;
         margin-top: 12px;
+
+        @media (max-width: 600px) {
+          font-size: 12px;
+          margin-top: 8px;
+          text-align: center;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
 
         span {
           color: $secondary_2;
@@ -148,12 +212,22 @@
     margin-top: 66px;
     margin-bottom: 74px;
 
+    @media (max-width: 600px) {
+      font-size: 14px; /* Reduce el tamaño de la fuente */
+      margin-top: 30px; /* Ajusta el margen superior */
+      margin-bottom: 30px; /* Ajusta el margen inferior */
+    }
+
     &.light {
       color: $neutral_300_light;
     }
 
     .white {
       color: $neutral_0;
+
+      @media (max-width: 600px) {
+        font-size: 14px; /* Ajusta el tamaño del texto blanco */
+      }
 
       &.light {
         color: $neutral_0_light;
@@ -169,5 +243,9 @@
     height: 1px;
     transform: rotate(90deg);
     background: linear-gradient(90deg, rgba(168, 255, 83, 0.00) 0%, #A8FF53 52.5%, rgba(168, 255, 83, 0.00) 100%);
+
+    @media (max-width: 600px) {
+      display: none; /* Oculta la línea decorativa en pantallas pequeñas */
+    }
   }
 }
