@@ -26,7 +26,7 @@ const Offer = () => {
       <img className={`${styles.countBackground} ${isLight && styles.light}`} src={`/images/${themeStatus === 'dark' ? 'black' : 'white'}/count-background.png`} alt='' />
       <div className={styles.titleContainer}>
         <div className={`${styles.dotTitle} ${isLight && styles.light}`}><Dot color={isLight ? '#62A92B' : undefined} />What do I offer</div>
-        <div className={`${styles.title} ${isLight && styles.light}`}>Designing solutions <span className={`${styles.gray} ${isLight && styles.light}`}>customized to meet your requirements</span></div>
+        <div className={`${styles.title} ${isLight && styles.light}`}>Designing solutions <br /><span className={`${styles.gray} ${isLight && styles.light}`}>customized to meet your requirements</span></div>
       </div>
       <div className={styles.cardContainer}>
         <Card img='window-line.png' title='Web & App Development' description='Crafting visually appealing and user-friendly interfaces using <span>React</span>, <span>React Native</span> or <span>Flutter</span>.' />

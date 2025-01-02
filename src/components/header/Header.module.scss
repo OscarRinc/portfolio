@@ -9,9 +9,21 @@
   background-color: $neutral_900;
   margin-top: 21px;
 
+  @media (max-width: 600px) {
+    margin-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border: none;
+    height: 60px;
+  }
+
   &.light {
     border: 1px solid $border_header_light;
     background-color: $header_bg_light;
+
+    @media (max-width: 600px) {
+      border: none;
+    }
   }
 
   .menuContainer {
@@ -35,6 +47,10 @@
     justify-content: space-between;
     padding: 0px 32px;
 
+    @media (max-width: 600px) {
+      padding: 0px 16px;
+    }
+
     .titleContainer {
       display: flex;
       column-gap: 9px;
@@ -43,6 +59,11 @@
       .titleIcon {
         width: 36px;
         height: 36px;
+
+        @media (max-width: 600px) {
+          width: 28px;
+          height: 28px;
+        }
       }
 
       .title {
@@ -51,6 +72,10 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+
+        @media (max-width: 600px) {
+          font-size: 18px;
+        }
       }
     }
 
@@ -60,6 +85,10 @@
       align-items: center;
       justify-content: center;
       column-gap: 37px;
+
+      @media (max-width: 600px) {
+        display: none;
+      }
 
       .menuItem {
         font-size: 16px;
@@ -74,10 +103,27 @@
       align-items: center;
       column-gap: 20px;
 
+      @media (max-width: 600px) {
+        column-gap: 12px;
+      }
+
       .soccialIcon {
         width: 18px;
         height: 18px;
         cursor: pointer;
+
+        &.mobile {
+          display: none;
+
+          @media (max-width: 600px) {
+            display: block;
+          }
+        }
+
+        @media (max-width: 600px) {
+          width: 16px;
+          height: 16px;
+        }
       }
     }
   }
@@ -93,9 +139,20 @@
     border-bottom-right-radius: 8px;
     cursor: pointer;
 
+    @media (max-width: 600px) {
+      border-top-right-radius: 0px;
+      border: none;
+      width: 60px;
+    }
+
     .modeIcon {
       width: 24px;
       height: 24px;
+
+      @media (max-width: 600px) {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }
