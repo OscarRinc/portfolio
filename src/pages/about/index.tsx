@@ -39,7 +39,7 @@ const About = () => {
           {technologyContainer('/images/black/react.png')}
           <div className={`${styles.techMore} ${themeStatus === 'light' && styles.light}`}>...and more</div>
         </div>
-        <a href='/pdf/Oscar_Orlando_Rincon_Paez_-_Senior_Full_Stack_Developer.pdf' target='_blank'><div className={`${styles.cv} ${themeStatus === 'light' && styles.light}`}><img className={styles.cvIcon} src={`/images/${themeStatus === 'dark' ? 'black' : 'white'}/download-line.png`} alt='' />{'[ Download my CV ]'}</div></a>
+        <a href='/pdf/Oscar-Rincon-CV.pdf' target='_blank'><div className={`${styles.cv} ${themeStatus === 'light' && styles.light}`}><img className={styles.cvIcon} src={`/images/${themeStatus === 'dark' ? 'black' : 'white'}/download-line.png`} alt='' />{'[ Download my CV ]'}</div></a>
       </div>
     </div>
   )
